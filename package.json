@@ -1,0 +1,41 @@
+{
+  "name": "linter-ruby-lint",
+  "main": "./lib/main",
+  "version": "0.0.1",
+  "description": "Lint Ruby, using ruby-lint",
+  "repository": "https://github.com/stephenbinns/linter-ruby-lint",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.180.0"
+  },
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^4.6.1",
+    "atom-package-deps": "^4.0.1"
+  },
+  "devDependencies": {
+    "eslint": "latest"
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "globals": {
+      "atom": true
+    }
+  }
+}
