@@ -35,6 +35,6 @@ Your Config in Atom menu):
   # for descriptions
   'enabledAnalysisClasses': 'undefined_methods undefined_variables'
 
-  # DEPRECATED: skipped checks empty by default - use part of the warning
+  # skipped checks empty by default - use part of the warning
   'skippedChecks': 'undefined constant'
 ```
