@@ -1,7 +1,7 @@
 # linter-ruby-lint
 
 This linter plugin for [Linter](https://github.com/AtomLinter/Linter) provides
-an interface to [ruby-lint](https://github.com/YorickPeterse/ruby-lint) to lint 
+an interface to [ruby-lint](https://github.com/YorickPeterse/ruby-lint) to lint
 files
 
 ## Installation
@@ -27,6 +27,13 @@ Your Config in Atom menu):
 
   # ignored extensions, ERB and markdown files by default.
   'ignoredExtensions': 'erb, md'
+
+  # ignored files names, Gemfile by default
+  'ignoredFiles': 'Gemfile'
+
+  # analysis checks to enable - by default all are on. See ruby-lint documentation
+  # for descriptions
+  'enabledAnalysisClasses': 'undefined_methods undefined_variables'
 
   # skipped checks empty by default - use part of the warning
   'skippedChecks': 'undefined constant'
